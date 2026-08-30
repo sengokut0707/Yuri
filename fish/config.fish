@@ -19,8 +19,8 @@ set -g fish_greeting
 # 1. デフォルトカラーの設定
 set -g prompt_color '#90D7EC' # スカイブルー（デフォルト）
 
-# 2. prompt_color.fish が存在すれば読み込んで上書きする（このファイルだけ上書きしないよう~/.config/に直置き。）
-test -f ~/.config/prompt_color.fish; and source ~/.config/prompt_color.fish
+# 2. prompt_color.fish が存在すれば読み込んで上書きする
+test -f ~/.config/fish/prompt_color.fish; and source ~/.config/fish/prompt_color.fish
 
 
 # ==============================================================================
