@@ -44,6 +44,9 @@ abbr -a pac   "sudo pacman"
 abbr -a pip   "python3 -m pip"
 abbr -a python "python3"
 
+# --- fish上で1次的にbash使用 ---
+abbr -a bash  "bash --norc"
+
 # --- Git 操作 ---
 abbr -a ga    "git add"
 abbr -a gu    "git add -u"
