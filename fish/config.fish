@@ -43,8 +43,8 @@ set -g __fish_git_prompt_char_dirtystate '*Dirt'        # 未コミットの変�
 set -g __fish_git_prompt_char_stagedstate '+Added'        # ステージ済み
 set -g __fish_git_prompt_char_untrackedfiles '?Untrack'     # 未追跡ファイルあり
 set -g __fish_git_prompt_char_stashstate '$Stash'         # スタッシュあり
-set -g __fish_git_prompt_char_upstream_ahead ' >Commited+'    # リモートより先行
-set -g __fish_git_prompt_char_upstream_behind ' <Commited-'   # リモートより遅れ
+set -g __fish_git_prompt_char_upstream_ahead '>Commited+'    # リモートより先行
+set -g __fish_git_prompt_char_upstream_behind '<Commited-'   # リモートより遅れ
 
 
 # ==============================================================================
