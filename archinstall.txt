@@ -122,6 +122,7 @@ nmtui
 
 ## fish
 sudo pacman -S fish
+sudo pacman -S zoxide rip2
 
 ```~/.bashrc
 #＃ fishが存在する場合は起動
