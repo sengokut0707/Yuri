@@ -33,6 +33,18 @@ sudo systemctl enable --now bluetooth
 
 
 
+## オートログイン
+sudo systemctl edit getty@tty1.service
+"""
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty --autologin <username> --noclear %I $TERM
+"""
+## 元に戻すとき
+# sudo systemctl revert getty@tty1.service
+
+
+
 ## Swayインストール
 sudo pacman -S sway xorg-xwayland foot wofi swayidle swaybg grim cliphist dunst polkit-gnome wf-recorder
 
