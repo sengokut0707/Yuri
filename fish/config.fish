@@ -3,14 +3,14 @@
 # 基本設定 & エイリアス読み込み
 # ==============================================================================
 
+# Greeting（起動時のウェルカムメッセージ）を非表示にする
+set -g fish_greeting
+
 # ~/.bin が存在する場合のみ PATH に追加
 test -d $HOME/.bin; and fish_add_path $HOME/.bin
 
 # エイリアスファイルの読み込み
 test -f ~/.config/fish/alias.fish; and source ~/.config/fish/alias.fish
-
-# Greeting（起動時のウェルカムメッセージ）を非表示にする
-set -g fish_greeting
 
 # ==============================================================================
 # カラー設定
@@ -19,8 +19,8 @@ set -g fish_greeting
 # 1. デフォルトカラーの設定
 set -g prompt_color '#90D7EC' # スカイブルー（デフォルト）
 
-# 2. prompt_color.fish が存在すれば読み込んで上書きする
-test -f ~/.config/fish/prompt_color.fish; and source ~/.config/fish/prompt_color.fish
+# 2. custom.fish が存在すれば読み込んで上書きする
+test -f ~/.config/fish/custom.fish; and source ~/.config/fish/custom.fish
 
 
 # ==============================================================================
@@ -43,8 +43,8 @@ set -g __fish_git_prompt_char_dirtystate '*Dirt'        # 未コミットの変�
 set -g __fish_git_prompt_char_stagedstate '+Added'        # ステージ済み
 set -g __fish_git_prompt_char_untrackedfiles '?Untrack'     # 未追跡ファイルあり
 set -g __fish_git_prompt_char_stashstate '$Stash'         # スタッシュあり
-set -g __fish_git_prompt_char_upstream_ahead '>Commited+'    # リモートより先行
-set -g __fish_git_prompt_char_upstream_behind '<Commited-'   # リモートより遅れ
+set -g __fish_git_prompt_char_upstream_ahead ' >Commited+'    # リモートより先行
+set -g __fish_git_prompt_char_upstream_behind ' <Commited-'   # リモートより遅れ
 
 
 # ==============================================================================
