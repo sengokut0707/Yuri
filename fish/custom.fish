@@ -12,6 +12,6 @@ set prompt_color '#90D7EC' # スカイブルー
 test -d $HOME/Gitdir/Scripts; and fish_add_path $HOME/Gitdir/Scripts
 
 
-alias Systems="$HOME/Gitdir/Systems"
-alias Scripts="$HOME/Gitdir/Scripts"
-alias Notes="$HOME/Gitdir/Notes"
+alias Systems="cd $HOME/Gitdir/Systems"
+alias Scripts="cd $HOME/Gitdir/Scripts"
+alias Notes="cd $HOME/Gitdir/Notes"
